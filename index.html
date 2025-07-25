@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haider El-Timimi - Journalist & Mediepersonlighet</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#1e40af',secondary:'#f59e0b'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.font-serif { font-family: 'Playfair Display', serif; }
+.font-sans { font-family: 'Inter', sans-serif; }
+body {
+background-color: #f0f7ff;
+}
+.hero-bg {
+background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+}
+.custom-gradient {
+background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+.glow-effect {
+box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+.hover-glow:hover {
+box-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
+transform: translateY(-2px);
+}
+.neon-accent {
+color: #06b6d4;
+text-shadow: 0 0 10px rgba(6, 182, 212, 0.3);
+}
+.card-hover:hover {
+transform: translateY(-8px);
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+.social-icon:hover {
+transform: scale(1.1);
+color: #3b82f6;
+}
+.logo-container {
+border: 2px solid #1e40af;
+background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+}
+.audio-player {
+background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+</style>
+</head>
+<body class="bg-gray-50 font-sans">
+<nav class="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-50 transition-all duration-300">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="logo-container px-3 py-1.5 rounded-lg">
+<div class="font-bold text-base text-primary">HAIDER EL-TIMIMI</div>
+<div class="text-xs text-gray-600 font-medium">SVERIGES RADIO</div>
+</div>
+<div class="hidden md:flex space-x-8">
+<a href="#hem" class="text-gray-700 hover:text-primary transition-colors">Hem</a>
+<a href="#om" class="text-gray-700 hover:text-primary transition-colors">Om Haider</a>
+<a href="#projekt" class="text-gray-700 hover:text-primary transition-colors">Projekt</a>
+<a href="#press" class="text-gray-700 hover:text-primary transition-colors">Press</a>
+<a href="#kontakt" class="text-gray-700 hover:text-primary transition-colors">Kontakt</a>
+</div>
+<button class="md:hidden">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-menu-line text-xl"></i>
+</div>
+</button>
+</div>
+</div>
+</nav>
+<section id="hem" class="min-h-screen flex items-center relative overflow-hidden" style="background-color: #E8F1FD;">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="text-white">
+<h1 class="text-5xl lg:text-7xl font-bold mb-6 font-serif">
+<span class="text-gray-900">JAG ÄR</span><br>
+<span class="text-primary/90">HAIDER<br>EL-TIMIMI</span>
+</h1>
+<p class="text-xl lg:text-2xl mb-8 font-light leading-relaxed text-gray-900">
+Journalist, programledare och kreativ mediepersonlighet på Sveriges Radio.
+Jag skapar innehåll som engagerar, inspirerar och förenar människor.
+</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="#projekt" class="bg-primary hover:bg-blue-700 text-white px-8 py-4 !rounded-button font-semibold transition-all hover-glow whitespace-nowrap inline-block">
+Lyssna på mina program
+</a>
+<a href="#om" class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 !rounded-button font-semibold transition-all whitespace-nowrap inline-block">
+Läs mer om mig
+</a>
+</div>
+</div>
+<div class="flex justify-center lg:justify-end">
+<div class="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden glow-effect">
+<img src="image1.jpg"
+alt="Haider El-Timimi"
+class="w-full h-full object-cover object-top">
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="om" class="py-20" style="background-color: #E1EAF6;">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 font-serif">Om Haider</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+En passionerad berättare som använder radions kraft för att skapa meningsfulla samtal och bygga broar mellan människor.
+</p>
+</div>
+<div class="flex flex-col gap-8">
+<div>
+<div class="bg-gray-50 p-8 rounded-2xl mb-8">
+<blockquote class="text-lg italic text-gray-700 mb-4 font-serif">
+"Radio är det mest intima mediet som finns. När jag pratar i mikrofonen, pratar jag direkt till varje lyssnares hjärta. Det är en otrolig kraft och ett stort ansvar."
+</blockquote>
+<cite class="text-primary font-semibold">- Haider El-Timimi</cite>
+</div>
+<p class="text-gray-700 mb-6 leading-relaxed">
+Haider El-Timimi är en av Sveriges mest engagerade och karismatiska mediepersonligheter. Med rötter i Malmö och en passion för berättande har han gjort sig känd som en röst som både utmanar och omfamnar.
+</p>
+<p class="text-gray-700 mb-6 leading-relaxed">
+Som programledare på Sveriges Radio P3 skapar Haider innehåll som speglar det moderna Sverige - mångfacetterat, nyfiket och inkluderande. Hans förmåga att skapa djupa samtal om både vardagliga och komplexa ämnen har gjort honom till en uppskattad röst i svensk media.
+</p>
+<div class="flex flex-wrap gap-3">
+<span class="bg-primary text-white px-4 py-2 rounded-full text-sm">Programledare</span>
+<span class="bg-primary text-white px-4 py-2 rounded-full text-sm">Journalist</span>
+<span class="bg-primary text-white px-4 py-2 rounded-full text-sm">Storyteller</span>
+<span class="bg-primary text-white px-4 py-2 rounded-full text-sm">Mediepersonlighet</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-gray-50 p-6 rounded-2xl">
+<div class="w-12 h-12 flex items-center justify-center mb-4">
+<i class="ri-mic-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2 text-gray-900">Sveriges Radio P3</h3>
+<p class="text-gray-600">Programledare för flera av P3:s mest populära program, där jag skapar innehåll som når tusentals lyssnare dagligen.</p>
+</div>
+<div class="bg-gray-50 p-6 rounded-2xl">
+<div class="w-12 h-12 flex items-center justify-center mb-4">
+<i class="ri-tv-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2 text-gray-900">SVT Sommarlov</h3>
+<p class="text-gray-600">Programledare i SVT:s populära sommarprogram, där jag får möta tittare från hela Sverige.</p>
+</div>
+<div class="bg-gray-50 p-6 rounded-2xl">
+<div class="w-12 h-12 flex items-center justify-center mb-4">
+<i class="ri-heart-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2 text-gray-900">Samhällsengagemang</h3>
+<p class="text-gray-600">Engagerad i frågor som rör mångfald, inkludering och ungas röster i samhällsdebatten.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="projekt" class="py-20" style="background-color: #E8F1FD;">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 font-serif">Mina Projekt</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+Utforska mitt arbete inom radio och media - från djupa samtal till underhållande program.
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white rounded-2xl overflow-hidden shadow-lg hover-glow card-hover transition-all duration-300">
+<div class="p-6">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+<i class="ri-radio-line text-white text-xl"></i>
+</div>
+<div>
+<h3 class="font-semibold text-gray-900">P3 med Haider & Etti</h3>
+<p class="text-sm text-gray-600">Sveriges Radio P3</p>
+</div>
+</div>
+<div class="audio-player p-4 rounded-lg mb-4">
+<div class="flex items-center justify-between mb-2">
+<span class="text-sm font-medium text-gray-700">Avsnitt 2</span>
+<span class="text-xs text-gray-500">45 min</span>
+</div>
+<div class="flex items-center space-x-3">
+<button class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors">
+<i class="ri-play-fill"></i>
+</button>
+<div class="flex-1 bg-gray-300 rounded-full h-2">
+<div class="bg-primary h-2 rounded-full w-1/3"></div>
+</div>
+</div>
+</div>
+<p class="text-gray-600 mb-4">
+Ett program fyllt med humor, djupa samtal och aktuella ämnen tillsammans med Etti Eshete.
+</p>
+<a href="https://www.sverigesradio.se/avsnitt/p3-med-haider-el-timimi-och-etti-eshete--2"
+target="_blank"
+rel="noopener"
+class="inline-flex items-center text-primary hover:text-blue-700 font-medium">
+Lyssna på SR Play
+<div class="w-4 h-4 ml-2 flex items-center justify-center">
+<i class="ri-external-link-line"></i>
+</div>
+</a>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden shadow-lg hover-glow card-hover transition-all duration-300">
+<div class="p-6">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+<i class="ri-radio-line text-white text-xl"></i>
+</div>
+<div>
+<h3 class="font-semibold text-gray-900">P3 med Petter & Haider</h3>
+<p class="text-sm text-gray-600">Sveriges Radio P3</p>
+</div>
+</div>
+<div class="audio-player p-4 rounded-lg mb-4">
+<div class="flex items-center justify-between mb-2">
+<span class="text-sm font-medium text-gray-700">Avsnitt 9</span>
+<span class="text-xs text-gray-500">52 min</span>
+</div>
+<div class="flex items-center space-x-3">
+<button class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors">
+<i class="ri-play-fill"></i>
+</button>
+<div class="flex-1 bg-gray-300 rounded-full h-2">
+<div class="bg-primary h-2 rounded-full w-2/5"></div>
+</div>
+</div>
+</div>
+<p class="text-gray-600 mb-4">
+Tillsammans med Petter Hallén skapar vi ett program som blandar humor med seriösa ämnen.
+</p>
+<a href="https://www.sverigesradio.se/avsnitt/p3-med-petter-hallen-och-haider-el-timimi--9"
+target="_blank"
+rel="noopener"
+class="inline-flex items-center text-primary hover:text-blue-700 font-medium">
+Lyssna på SR Play
+<div class="w-4 h-4 ml-2 flex items-center justify-center">
+<i class="ri-external-link-line"></i>
+</div>
+</a>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden shadow-lg hover-glow card-hover transition-all duration-300">
+<div class="p-6">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+<i class="ri-radio-line text-white text-xl"></i>
+</div>
+<div>
+<h3 class="font-semibold text-gray-900">P3 med Petter & Haider</h3>
+<p class="text-sm text-gray-600">Sveriges Radio P3</p>
+</div>
+</div>
+<div class="audio-player p-4 rounded-lg mb-4">
+<div class="flex items-center justify-between mb-2">
+<span class="text-sm font-medium text-gray-700">Avsnitt 10</span>
+<span class="text-xs text-gray-500">48 min</span>
+</div>
+<div class="flex items-center space-x-3">
+<button class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors">
+<i class="ri-play-fill"></i>
+</button>
+<div class="flex-1 bg-gray-300 rounded-full h-2">
+<div class="bg-primary h-2 rounded-full w-1/4"></div>
+</div>
+</div>
+</div>
+<p class="text-gray-600 mb-4">
+Fortsättningen på vårt populära program med ännu mer engagerande innehåll och gäster.
+</p>
+<a href="https://www.sverigesradio.se/avsnitt/p3-med-petter-hallen-och-haider-el-timimi--10"
+target="_blank"
+rel="noopener"
+class="inline-flex items-center text-primary hover:text-blue-700 font-medium">
+Lyssna på SR Play
+<div class="w-4 h-4 ml-2 flex items-center justify-center">
+<i class="ri-external-link-line"></i>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="press" class="py-20" style="background-color: #E1EAF6;">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 font-serif">Press & Publikationer</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+Läs vad media skriver om Haider El-Timimi och hans arbete inom svensk radio och television.
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<article class="bg-gray-50 rounded-2xl p-6 hover-glow card-hover transition-all duration-300">
+<div class="flex items-center mb-4">
+<div>
+<h3 class="font-semibold text-gray-900">Familjeliv</h3>
+<p class="text-sm text-gray-600">Maj 2025</p>
+</div>
+</div>
+<h4 class="text-lg font-semibold text-gray-900 mb-3">
+Haider El-Timimi: Ålder, ursprung, uppväxt, radio och sommarlov
+</h4>
+<p class="text-gray-600 mb-4">
+En djupgående artikel om Haiders bakgrund, karriär och personliga resa inom svensk media...
+</p>
+<a href="https://www.familjeliv.se/relationer/1402711-haider-el-timimi-alder-ursprung-uppvaxt-radio-och-sommarlov"
+target="_blank"
+rel="noopener"
+class="inline-flex items-center text-pink-500 hover:text-pink-600 font-medium">
+Läs hela artikeln
+<div class="w-4 h-4 ml-2 flex items-center justify-center">
+<i class="ri-external-link-line"></i>
+</div>
+</a>
+</article>
+<article class="bg-gray-50 rounded-2xl p-6 hover-glow card-hover transition-all duration-300">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 flex items-center justify-center mr-4">
+<i class="ri-nyheter24-fill text-[#FF0000] text-3xl"></i>
+</div>
+<div>
+<h3 class="font-semibold text-gray-900">Nyheter24</h3>
+<p class="text-sm text-gray-600">Maj 2025</p>
+</div>
+</div>
+<h4 class="text-lg font-semibold text-gray-900 mb-3">
+Allt om Haider El-Timimi: Flickvän, barn och sommarlov i SVT
+</h4>
+<p class="text-gray-600 mb-4">
+Nyheter24 berättar om Haiders privatliv och hans nya roll som programledare i SVT:s sommarlov...
+</p>
+<a href="https://nyheter24.se/noje/tv/1403144-allt-om-haider-el-timimi-flickvan-barn-och-sommarlov-i-svt"
+target="_blank"
+rel="noopener"
+class="inline-flex items-center text-red-500 hover:text-red-600 font-medium">
+Läs hela artikeln
+<div class="w-4 h-4 ml-2 flex items-center justify-center">
+<i class="ri-external-link-line"></i>
+</div>
+</a>
+</article>
+<article class="bg-gray-50 rounded-2xl p-6 hover-glow card-hover transition-all duration-300">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 flex items-center justify-center mr-4">
+<i class="ri-sydsvenskan-fill text-[#004B93] text-3xl"></i>
+</div>
+<div>
+<h3 class="font-semibold text-gray-900">Sydsvenskan</h3>
+<p class="text-sm text-gray-600">6 maj 2025</p>
+</div>
+</div>
+<h4 class="text-lg font-semibold text-gray-900 mb-3">
+Radioprofilen från Malmö blir programledare i Sommarlov
+</h4>
+<p class="text-gray-600 mb-4">
+Sydsvenskan rapporterar om Haiders nya uppdrag som programledare i SVT:s populära sommarprogram...
+</p>
+<a href="https://www.sydsvenskan.se/2025-05-06/radioprofilen-fran-malmo-blir-programledare-i-sommarlov/"
+target="_blank"
+rel="noopener"
+class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium">
+Läs hela artikeln
+<div class="w-4 h-4 ml-2 flex items-center justify-center">
+<i class="ri-external-link-line"></i>
+</div>
+</a>
+</article>
+<article class="bg-gray-50 rounded-2xl p-6 hover-glow card-hover transition-all duration-300">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 flex items-center justify-center mr-4">
+<i class="ri-expressen-fill text-[#0075FF] text-3xl"></i>
+</div>
+<div>
+<h3 class="font-semibold text-gray-900">Expressen</h3>
+<p class="text-sm text-gray-600">Maj 2025</p>
+</div>
+</div>
+<h4 class="text-lg font-semibold text-gray-900 mb-3">
+Haider El-Timimi är nya killen i SVT:s Sommarlov
+</h4>
+<p class="text-gray-600 mb-4">
+Expressen skriver om Haiders nya roll och vad tittarna kan förvänta sig av hans programledning...
+</p>
+<a href="https://www.expressen.se/kvallsposten/haider-el-timimi-ar-nya-killen-i-svts-sommarlov/"
+target="_blank"
+rel="noopener"
+class="inline-flex items-center text-yellow-600 hover:text-yellow-700 font-medium">
+Läs hela artikeln
+<div class="w-4 h-4 ml-2 flex items-center justify-center">
+<i class="ri-external-link-line"></i>
+</div>
+</a>
+</article>
+</div>
+</div>
+</section>
+<section id="kontakt" class="py-20" style="background-color: #E8F1FD;">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 font-serif">Kom i kontakt</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+Låt oss prata! Jag är alltid intresserad av nya projekt, samarbeten och intressanta samtal.
+</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<div class="bg-white rounded-2xl p-10 shadow-lg">
+<h3 class="text-2xl font-bold text-gray-900 mb-6">Skicka ett meddelande</h3>
+<form id="contactForm" class="space-y-6">
+<div>
+<label for="name" class="block text-sm font-medium text-gray-700 mb-2">Namn *</label>
+<input type="text"
+id="name"
+name="name"
+required
+class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm">
+</div>
+<div>
+<label for="email" class="block text-sm font-medium text-gray-700 mb-2">E-post *</label>
+<input type="email"
+id="email"
+name="email"
+required
+class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm">
+</div>
+<div>
+<label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Ämne</label>
+<input type="text"
+id="subject"
+name="subject"
+class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm">
+</div>
+<div>
+<label for="message" class="block text-sm font-medium text-gray-700 mb-2">Meddelande</label>
+<textarea id="message"
+name="message"
+rows="5"
+class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm resize-none"></textarea>
+</div>
+<button type="submit"
+class="w-full bg-primary hover:bg-blue-700 text-white py-3 px-6 !rounded-button font-semibold transition-all hover-glow whitespace-nowrap">
+Skicka meddelande
+</button>
+</form>
+</div>
+<div class="space-y-8">
+<div class="bg-white rounded-2xl p-10 shadow-lg">
+<h3 class="text-2xl font-bold text-gray-900 mb-6">Följ mig</h3>
+<div class="space-y-4">
+<a href="mailto:haider89@live.se"
+class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors group">
+<div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mr-4 group-hover:bg-red-600 transition-colors">
+<i class="ri-mail-line text-white text-xl"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-900">E-post</h4>
+<p class="text-gray-600">haider89@live.se</p>
+</div>
+</a>
+<a href="https://www.linkedin.com/in/haider-el-timimi-5126b9146"
+target="_blank"
+rel="noopener"
+class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors group">
+<div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-4 group-hover:bg-blue-700 transition-colors">
+<i class="ri-linkedin-fill text-white text-xl"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-900">LinkedIn</h4>
+<p class="text-gray-600">Haider El-Timimi</p>
+</div>
+</a>
+<a href="https://www.tiktok.com/@haider.elt"
+target="_blank"
+rel="noopener"
+class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors group">
+<div class="w-12 h-12 bg-black rounded-lg flex items-center justify-center mr-4 group-hover:bg-gray-800 transition-colors">
+<i class="ri-tiktok-fill text-white text-xl"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-900">TikTok</h4>
+<p class="text-gray-600">@haider.elt</p>
+</div>
+</a>
+</div>
+</div>
+<div class="bg-gradient-to-r from-primary to-blue-600 rounded-2xl p-8 text-white">
+<h3 class="text-2xl font-bold mb-4">Låt oss skapa något tillsammans</h3>
+<p class="text-blue-100 mb-6">
+Jag är alltid öppen för nya idéer, samarbeten och kreativa projekt. Hör av dig så kan vi utforska möjligheterna tillsammans.
+</p>
+<div class="flex items-center">
+<div class="w-8 h-8 flex items-center justify-center mr-3">
+<i class="ri-phone-line text-xl"></i>
+</div>
+<span>Kontakta mig via formuläret eller sociala medier</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer style="background-color: #E1EAF6;" class="py-12 text-gray-800">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h2 class="text-2xl font-bold mb-2">Haider El-Timimi</h2>
+<p class="text-gray-600 mb-6">Kreativ mediepersonlighet & Journalist</p>
+<div class="flex justify-center space-x-6 mb-8">
+<a href="https://www.linkedin.com/in/haider-el-timimi-5126b9146" target="_blank" rel="noopener" class="w-10 h-10 bg-white rounded-lg flex items-center justify-center hover:bg-gray-100 transition-colors social-icon">
+<i class="ri-linkedin-fill text-gray-700"></i>
+</a>
+<a href="mailto:haider89@live.se" class="w-10 h-10 bg-white rounded-lg flex items-center justify-center hover:bg-gray-100 transition-colors social-icon">
+<i class="ri-mail-line text-gray-700"></i>
+</a>
+<a href="https://www.tiktok.com/@haider.elt" target="_blank" rel="noopener" class="w-10 h-10 bg-white rounded-lg flex items-center justify-center hover:bg-gray-100 transition-colors social-icon">
+<i class="ri-tiktok-fill text-gray-700"></i>
+</a>
+</div>
+<p class="text-gray-600">© 2025 Haider El-Timimi. Alla rättigheter förbehållna.</p>
+</div>
+</footer>
+<script id="contactForm">
+document.addEventListener('DOMContentLoaded', function() {
+const form = document.getElementById('contactForm');
+form.addEventListener('submit', function(e) {
+e.preventDefault();
+const formData = new FormData(form);
+const name = formData.get('name');
+const email = formData.get('email');
+const subject = formData.get('subject') || 'Meddelande från portfölj';
+const message = formData.get('message');
+const mailtoLink = `mailto:haider89@live.se?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Namn: ${name}\nE-post: ${email}\n\nMeddelande:\n${message}`)}`;
+window.location.href = mailtoLink;
+});
+});
+</script>
+<script id="smoothScroll">
+document.addEventListener('DOMContentLoaded', function() {
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+targetElement.scrollIntoView({
+behavior: 'smooth',
+block: 'start'
+});
+}
+});
+});
+});
+</script>
+<script id="audioPlayers">
+document.addEventListener('DOMContentLoaded', function() {
+const playButtons = document.querySelectorAll('.audio-player button');
+playButtons.forEach(button => {
+button.addEventListener('click', function() {
+const isPlaying = this.querySelector('i').classList.contains('ri-pause-fill');
+playButtons.forEach(btn => {
+btn.querySelector('i').className = 'ri-play-fill';
+});
+if (!isPlaying) {
+this.querySelector('i').className = 'ri-pause-fill';
+}
+});
+});
+});
+</script>
+</body>
+</html>
