@@ -3,7 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Haider El-Timimi - Journalist & Mediepersonlighet</title>
+<title>Haider ElTimimi – Programledare på Sveriges Radio & SVT Sommarlov</title>
+<meta name="description" content="Officiell hemsida för Haider El-Timimi – programledare på Sveriges Radio P3 och SVT Sommarlov. Utforska hans projekt, pressartiklar och kontaktuppgifter.">
+  <meta name="keywords" content="Haider El-Timimi, Sveriges Radio, P3, SVT Sommarlov, journalist, programledare, Malmö, media, storytelling">
+  <meta name="author" content="Haider El-Timimi">
+
+  <!-- ✅ Open Graph (för Facebook, LinkedIn m.fl.) -->
+  <meta property="og:title" content="Haider El-Timimi – Programledare & Mediepersonlighet" />
+  <meta property="og:description" content="Programledare på Sveriges Radio P3 & SVT Sommarlov. Läs mer om Haiders projekt, press och kontakt." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.haidereltimimi.page.gd/" />
+  <meta property="og:image" content="https://www.haidereltimimi.page.gd/images/haider-profile.jpg" /> <!-- byt ut mot en riktig bild -->
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Haider El-Timimi – Programledare på Sveriges Radio & SVT Sommarlov" />
+  <meta name="twitter:description" content="Officiell hemsida för Haider El-Timimi. Utforska hans projekt, artiklar och kontaktuppgifter." />
+  <meta name="twitter:image" content="https://www.haidereltimimi.page.gd/images/haider-profile.jpg" /> <!-- byt ut mot en riktig bild -->
+
+  <!-- ✅ SEO för olika sektioner (kan användas om du gör multipage eller sections med dynamiska meta) -->
+  <meta name="section-om" content="Lär känna Haider El-Timimi, en passionerad programledare och berättare från Malmö. Han är känd för sitt arbete på Sveriges Radio P3 och SVT Sommarlov.">
+  <meta name="section-projekt" content="Utforska Haider El-Timimis projekt: P3 med Haider & Etti, P3 med Petter & Haider samt hans arbete som programledare i SVT:s Sommarlov.">
+  <meta name="section-press" content="Artiklar och pressklipp om Haider El-Timimi från Expressen, Sydsvenskan, Nyheter24 och Familjeliv. Läs om hans resa som programledare.">
+  <meta name="section-kontakt" content="Vill du boka Haider El-Timimi för intervju eller samarbete? Här hittar du hans kontaktuppgifter och sociala medier.">
+<link rel="icon" type="image/jpg" href="image1.jpg">
 <script src="https://cdn.tailwindcss.com/3.4.16"></script>
 <script>tailwind.config={theme:{extend:{colors:{primary:'#1e40af',secondary:'#f59e0b'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,6 +34,53 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
 <style>
+/* Favicon masking */
+link[rel="icon"] {
+  border-radius: 50%;
+  mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/dialog"><circle cx="50%" cy="50%" r="50%"/></svg>');
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/dialog"><circle cx="50%" cy="50%" r="50%"/></svg>');
+}
+
+/* Mobile responsiveness improvements */
+@media (max-width: 768px) {
+  .hero-text {
+    text-align: center;
+  }
+  
+  .flex-col-mobile {
+    flex-direction: column;
+  }
+  
+  .grid-cols-1-mobile {
+    grid-template-columns: 1fr;
+  }
+  
+  .px-4-mobile {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .text-center-mobile {
+    text-align: center;
+  }
+  
+  .w-full-mobile {
+    width: 100%;
+  }
+  
+  .mt-8-mobile {
+    margin-top: 2rem;
+  }
+  
+  .mb-8-mobile {
+    margin-bottom: 2rem;
+  }
+  
+  .text-3xl-mobile {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
 :where([class^="ri-"])::before { content: "\f3c2"; }
 .font-serif { font-family: 'Playfair Display', serif; }
 .font-sans { font-family: 'Inter', sans-serif; }
@@ -49,6 +119,42 @@ background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
 .audio-player {
 background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
 }
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.98);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-menu.active {
+  transform: translateX(0);
+}
+
+.mobile-menu a {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #1e40af;
+  transition: color 0.2s;
+}
+
+.mobile-menu a:hover {
+  color: #3b82f6;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 </style>
 </head>
 <body class="bg-gray-50 font-sans">
@@ -66,7 +172,7 @@ background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
 <a href="#press" class="text-gray-700 hover:text-primary transition-colors">Press</a>
 <a href="#kontakt" class="text-gray-700 hover:text-primary transition-colors">Kontakt</a>
 </div>
-<button class="md:hidden">
+<button class="md:hidden" id="menuButton" aria-label="Toggle menu">
 <div class="w-6 h-6 flex items-center justify-center">
 <i class="ri-menu-line text-xl"></i>
 </div>
@@ -74,9 +180,18 @@ background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
 </div>
 </div>
 </nav>
+
+<!-- Add mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#hem" class="mobile-link">Hem</a>
+  <a href="#om" class="mobile-link">Om Haider</a>
+  <a href="#projekt" class="mobile-link">Projekt</a>
+  <a href="#press" class="mobile-link">Press</a>
+  <a href="#kontakt" class="mobile-link">Kontakt</a>
+</div>
 <section id="hem" class="min-h-screen flex items-center relative overflow-hidden" style="background-color: #E8F1FD;">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-center-mobile">
 <div class="text-white">
 <h1 class="text-5xl lg:text-7xl font-bold mb-6 font-serif">
 <span class="text-gray-900">JAG ÄR</span><br>
@@ -87,7 +202,7 @@ Journalist, programledare och kreativ mediepersonlighet på Sveriges Radio.
 Jag skapar innehåll som engagerar, inspirerar och förenar människor.
 </p>
 <div class="flex flex-col sm:flex-row gap-4">
-<a href="#projekt" class="bg-primary hover:bg-blue-700 text-white px-8 py-4 !rounded-button font-semibold transition-all hover-glow whitespace-nowrap inline-block">
+<a href="#projekt" class="bg-primary hover:bg-blue-700 text-white px-8 py-4 !rounded-button font-semibold transition-all hover-glow whitespace-nowrap">
 Lyssna på mina program
 </a>
 <a href="#om" class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 !rounded-button font-semibold transition-all whitespace-nowrap inline-block">
@@ -127,14 +242,14 @@ Haider El-Timimi är en av Sveriges mest engagerade och karismatiska medieperson
 <p class="text-gray-700 mb-6 leading-relaxed">
 Som programledare på Sveriges Radio P3 skapar Haider innehåll som speglar det moderna Sverige - mångfacetterat, nyfiket och inkluderande. Hans förmåga att skapa djupa samtal om både vardagliga och komplexa ämnen har gjort honom till en uppskattad röst i svensk media.
 </p>
-<div class="flex flex-wrap gap-3">
+<div class="flex flex-wrap gap-3 justify-center">
 <span class="bg-primary text-white px-4 py-2 rounded-full text-sm">Programledare</span>
 <span class="bg-primary text-white px-4 py-2 rounded-full text-sm">Journalist</span>
 <span class="bg-primary text-white px-4 py-2 rounded-full text-sm">Storyteller</span>
 <span class="bg-primary text-white px-4 py-2 rounded-full text-sm">Mediepersonlighet</span>
 </div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 grid-cols-1-mobile">
 <div class="bg-gray-50 p-6 rounded-2xl">
 <div class="w-12 h-12 flex items-center justify-center mb-4">
 <i class="ri-mic-line text-2xl text-primary"></i>
@@ -168,7 +283,7 @@ Som programledare på Sveriges Radio P3 skapar Haider innehåll som speglar det 
 Utforska mitt arbete inom radio och media - från djupa samtal till underhållande program.
 </p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 grid-cols-1-mobile">
 <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover-glow card-hover transition-all duration-300">
 <div class="p-6">
 <div class="flex items-center mb-4">
@@ -323,9 +438,6 @@ Läs hela artikeln
 </article>
 <article class="bg-gray-50 rounded-2xl p-6 hover-glow card-hover transition-all duration-300">
 <div class="flex items-center mb-4">
-<div class="w-12 h-12 flex items-center justify-center mr-4">
-<i class="ri-nyheter24-fill text-[#FF0000] text-3xl"></i>
-</div>
 <div>
 <h3 class="font-semibold text-gray-900">Nyheter24</h3>
 <p class="text-sm text-gray-600">Maj 2025</p>
@@ -349,9 +461,6 @@ Läs hela artikeln
 </article>
 <article class="bg-gray-50 rounded-2xl p-6 hover-glow card-hover transition-all duration-300">
 <div class="flex items-center mb-4">
-<div class="w-12 h-12 flex items-center justify-center mr-4">
-<i class="ri-sydsvenskan-fill text-[#004B93] text-3xl"></i>
-</div>
 <div>
 <h3 class="font-semibold text-gray-900">Sydsvenskan</h3>
 <p class="text-sm text-gray-600">6 maj 2025</p>
@@ -375,9 +484,6 @@ Läs hela artikeln
 </article>
 <article class="bg-gray-50 rounded-2xl p-6 hover-glow card-hover transition-all duration-300">
 <div class="flex items-center mb-4">
-<div class="w-12 h-12 flex items-center justify-center mr-4">
-<i class="ri-expressen-fill text-[#0075FF] text-3xl"></i>
-</div>
 <div>
 <h3 class="font-semibold text-gray-900">Expressen</h3>
 <p class="text-sm text-gray-600">Maj 2025</p>
@@ -410,7 +516,7 @@ Läs hela artikeln
 Låt oss prata! Jag är alltid intresserad av nya projekt, samarbeten och intressanta samtal.
 </p>
 </div>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 grid-cols-1-mobile">
 <div class="bg-white rounded-2xl p-10 shadow-lg">
 <h3 class="text-2xl font-bold text-gray-900 mb-6">Skicka ett meddelande</h3>
 <form id="contactForm" class="space-y-6">
@@ -571,6 +677,27 @@ this.querySelector('i').className = 'ri-pause-fill';
 }
 });
 });
+});
+</script>
+<script id="mobileMenu">
+document.addEventListener('DOMContentLoaded', function() {
+  const menuButton = document.getElementById('menuButton');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+
+  menuButton.addEventListener('click', function() {
+    mobileMenu.classList.toggle('active');
+    const icon = this.querySelector('i');
+    icon.classList.toggle('ri-menu-line');
+    icon.classList.toggle('ri-close-line');
+  });
+
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      mobileMenu.classList.remove('active');
+      menuButton.querySelector('i').className = 'ri-menu-line text-xl';
+    });
+  });
 });
 </script>
 </body>
